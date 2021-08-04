@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+        "baseUrl": "src",
+        "paths": {
+            "@Assets/*": ["assets/*"],
+            "@Config": ["components/config.js"],
+            "@Configs/*": ["components/configs/*"],
+            "@Stores/*": ["stores/*"],
+            "@Pages/*": ["pages/*"],
+            "@Env/*": ["env/*"],
+            "@Raven": ["services/Raven.js"],
+            "@Services/*": ["services/*"],
+            "@Sicon": ["components/fragment/Sicon.js"],
+            "@Fragment/*": ["components/fragment/*"],
+            "@Bowser": ["components/utils/Bowser.js"],
+            "@Customer": ["components/utils/Customer.js"],
+            "@Udirect": ["components/utils/Udirect/Udirect.js"],
+            "@Uflex": ["components/utils/Uflex/index.js"],
+            "@Umobi": ["components/utils/Umobi/index.js"],
+            "@Utils/*": ["components/utils/*"],
+            "@ACL/*": ["components/acl/*"],
+            "@Layouts": ["components/Layouts/*"],
+            "@GlobalHelpers": ["components/GlobalHelpers.js"],
+            "@History": ["components/History.js"],
+            "@Spinner": ["components/Spinner.js"],
+            "@Mobi": ["components/mobiscroll/Mobi.js"],
+            "@Components/*": ["components/*"]
+        }
+    }
+}

@@ -1,0 +1,8 @@
+@use '../../../../styles/mobiscroll' as m;
+// @include library.configure();
+
+.umobi-input {
+    .mbsc-input-outline {
+        @include m.umobi-input;
+    }
+}

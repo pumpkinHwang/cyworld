@@ -1,0 +1,31 @@
+// these colors now use for exmplae purpose, should improve later
+// * Colors plate
+$primary-color: #22AAEC;
+$secondary-color: #FFFFFF;
+
+$warning-color: #F2C94C;
+$danger-color: #FE5D7C;
+$disable-color: #F5F5F5;
+$border-color: #E3E8ED;
+$blue-gray-color: #E5EBF1;
+// * Global variables
+$border-radius: 7px;
+
+/* $midnightColor: #384250;
+$blueGrayColor: #E5EBF1;
+$mainBackgroundColor: #F5F5F5;
+$darkBlueColor: #003b6f;
+$subDescription: #707783;
+$listColor: #2B3F55; */
+
+@mixin configure($-darkmode: null) {
+    // Condition vars
+    @if $-darkmode {
+        // $-black: $black !global;
+    }
+}
+
+@mixin basic {
+    font-family: Prompt, sans-serif !important;
+    font-size: 16px;
+}

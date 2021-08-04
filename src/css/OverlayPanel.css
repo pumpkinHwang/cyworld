@@ -1,0 +1,4 @@
+.overlay-panel {
+  position: absolute;
+  z-index: 1;
+}

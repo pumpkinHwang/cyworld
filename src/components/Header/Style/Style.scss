@@ -1,0 +1,39 @@
+.filter-header-button {
+    cursor: pointer;
+    width: 50px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &.disabled {
+        opacity: .4;
+    }
+    &.filter-open {
+
+        svg {
+            
+            rect {
+                stroke: #22AAEC;
+            }
+    
+            g {
+                path {
+                    fill: #22AAEC;
+                }
+            }
+        }
+    
+    }
+}
+
+.header-toolbar {
+    right: 40px;
+}
+
+@media screen and (max-width: 767px) {
+
+
+    .header-toolbar {
+        right: 20px;
+    }
+}

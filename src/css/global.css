@@ -1,0 +1,86 @@
+/* core css for ant design components */
+@import '~antd/dist/antd.css';
+
+/* base size for `rem` unit (previously glyphicon font-size) */
+html {
+    font-size: 62.5%;
+}
+
+/* base fonts for our website */
+@font-face {
+    font-family: 'Prompt';
+    font-weight: 400;
+    font-style: normal;
+    src: url(../assets/fonts/Prompt-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Prompt';
+    src: url(../assets/fonts/Prompt-Medium.ttf) format('truetype');
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Noto Sans Thai';
+    src: url(../assets/fonts/NotoSansThai-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Noto Sans Thai';
+    src: url(../assets/fonts/NotoSansThai-Medium.ttf) format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Noto Sans Thai';
+    src: url(../assets/fonts/NotoSansThai-Bold.ttf) format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    src: url(../assets/fonts/NotoSans-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    src: url(../assets/fonts/NotoSans-Medium.ttf) format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    src: url(../assets/fonts/NotoSans-Bold.ttf) format('truetype');
+    font-weight: bold;
+}
+
+.MuiTable-root {border-top:2px solid #4a4a4a}
+.MuiTableRow-head * {font-size:14px;}
+/*member.login.api.php 2021-03-19*/
+
+table th {
+    border-left: 1px solid rgba(180, 180, 180, 0.15);
+    font-size:14px;
+}
+table th:nth-child(8n + 1) {
+    border-left: 0;
+}
+table td {
+    border-left: 1px solid rgba(201, 201, 201, 0.15);
+}
+table td:nth-child(8n + 1) {
+    border-left: 0;
+}
+
+.MuiTableCell-head:nth-child(odd) {
+}
+.MuiTableCell-head:nth-child(even) {
+}
+th.MuiTableCell-head {
+    border-left: 1px solid rgba(182, 182, 182, 0.15);
+}
+th.MuiTableCell-head:first-child {
+    border-left: 0;
+}
+.MuiSvgIcon-root {font-size:2.5rem;}

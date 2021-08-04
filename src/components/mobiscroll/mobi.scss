@@ -1,0 +1,23 @@
+.wrapper-mobi {
+    .mbsc-input {
+        input.mbsc-control {
+            height: 50px;
+            padding: 0 18px 3px;
+            border: 1px solid #dbe2e8;
+            border-radius: 5px;
+            color: #606975;
+            text-align: center;
+        }
+    }
+    .mbsc-ios.mbsc-control-w:before,
+    .mbsc-ios.mbsc-control-w:after {
+        border-top: none;
+    }
+    
+    .mbsc-ios.mbsc-input input:disabled, .mbsc-ios.mbsc-input textarea:disabled, .mbsc-ios.mbsc-input .mbsc-control:disabled ~ input, .mbsc-ios.mbsc-input .mbsc-control:disabled ~ .mbsc-ic {
+        color: #9EA9B9;
+        background-color: #F5F5F5;
+        border: 1px solid #E3E8ED;
+        opacity: 1;
+    }
+}

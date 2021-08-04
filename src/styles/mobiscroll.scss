@@ -1,0 +1,205 @@
+@use 'library.scss' as l;
+
+.mbsc-ios {
+    font-family: Prompt, sans-serif !important;
+
+    .mbsc-sc-whl-o, &.mbsc-calendar .mbsc-sc-whl-o {
+        background: transparent;
+    }
+
+    .mbsc-sc-whl-gr-3d .mbsc-sc-whl-c, &.mbsc-calendar .mbsc-sc-whl-gr-3d .mbsc-sc-whl-c {
+        background-color: white;
+    }
+
+    .mbsc-sc-itm:hover {
+        background: transparent !important;
+    }
+
+    .mbsc-sc-itm:focus {
+        background-color: l.$blue-gray-color !important;
+    }
+
+    .mbsc-fr-btn {
+        font-family: Prompt, sans-serif !important;
+        font-weight: normal;
+        color: l.$primary-color;
+    }
+
+    &.mbsc-fr-center {
+        .mbsc-fr-btn-e:not(.mbsc-disabled):hover, .mbsc-fr-btn.mbsc-active {
+            background-color: white !important;
+        }
+        .mbsc-fr-btn-w {
+            border-color: l.$border-color;
+        }
+    }
+    
+}
+
+.mobi-select {
+
+    padding-left: 2px;
+
+    &.disabled {
+        pointer-events: none !important;
+
+        label {
+            background-color: #F5F5F5;
+        }
+    }
+
+    .mbsc-select {
+        margin: 0 !important;
+        margin-top: 1px !important;
+        border: 0 !important;
+        width: 100% !important;
+        font-size: 16px !important;
+        border: 1px solid #E3E8ED !important;
+        border-radius: 7px !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        height: 49px !important;
+        color: #D3D3D3 !important;
+    }
+    .mbsc-select-input {
+        width: 100% !important;
+        font-size: 16px !important;
+        border-radius: 7px !important;
+        padding-left: 10px !important;
+        padding-right: 20px !important;
+        height: 49px !important;
+        color: #384250 !important;
+        text-align: center !important;
+    }
+
+    &.divisions-select {
+        .mbsc-select-input {
+            text-align: left !important;
+            padding-left: 0px !important;
+        }
+    }
+}
+
+.mobi-select {
+    &:focus, &:focus-within, &:focus-visible {
+        outline: none;
+    }
+    *:focus, *:focus-within, *:focus-visible {
+        outline: none;
+    }
+    &.od-shipto {
+        label {
+            margin: 0 !important;
+            border: 0 !important;
+        }
+        .od-shipto-input {
+            display: flex;
+            width: 100%;
+            font-size: 16px;
+            border-radius: 7px;
+            color: #D3D3D3;
+
+            label {
+                height: 100%;
+
+                &.mbsc-select.mbsc-input {
+                    border: 1px solid #E3E8ED !important;
+                    height: 50px;
+                    padding: 15px;
+                }
+            }
+
+            .mbsc-input-wrap {
+                input {
+                    height: auto;
+                    font-size: 16px;
+                    padding: 0;
+
+                    &.mbsc-control {
+                        position: relative;
+                        top: -3px;
+                    }
+                }
+            }
+        }
+        .mbsc-select-ic {
+            color: #D3D3D3;
+            top: 1em;
+            cursor: pointer;
+        }
+    }
+}
+
+.mbsc-fr-w {
+    border-radius: 7px !important;
+    background-color: white !important;
+}
+
+.mbsc-ios .mbsc-sel-filter-cont.mbsc-input {
+    background-color: #E3E8ED !important;
+    color: black !important;
+    font-size: 14px !important;
+}
+
+.mbsc-ios.mbsc-fr-pointer .mbsc-sc-itm-sel {
+    color: #22AAEC !important;
+}
+
+.mbsc-ios.mbsc-fr-pointer .mbsc-sc-whl-multi .mbsc-sc-itm {
+    &:hover, &:active, &:focus, &:focus-within, &:focus-visible {
+        background-color: l.$blue-gray-color !important;
+    }
+}
+
+.mbsc-ios.mbsc-fr-pointer .mbsc-ltr .mbsc-sc-itm-sel:before {
+    display: none;
+}
+
+@mixin umobi-input() {
+    @include l.basic;
+
+    margin: 0 !important;
+    border-radius: l.$border-radius !important;
+    width: 100%;
+    height: 50px;
+    padding: 0;
+    border: 1px solid transparent !important;
+    background: transparent !important;
+
+    &:focus, &:focus-visible, &:focus-within {
+        border: 1px solid transparent !important;
+        box-shadow: none !important; 
+        outline: 0 !important; 
+    }
+
+    input {
+        border: 1px solid l.$border-color !important;
+        border-radius: l.$border-radius !important;
+        padding: 0 15px 2px 15px;
+        height: 50px;
+        background: white !important;
+        color: black;
+        transition: border-color .25s !important;
+
+    }
+
+    input:focus, input:focus-visible, input:focus-within {
+        border: 1px solid l.$primary-color !important;
+    }
+
+    input:disabled {
+        opacity: 1;
+        color: #C0BFBF !important;
+        background-color: #F5F5F5 !important;
+    }
+
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover, 
+    input:-webkit-autofill:focus {
+        @include l.basic;
+        // -webkit-text-fill-color: black;
+        -webkit-box-shadow: 0 0 0px 30px white inset;
+        box-shadow: 0 0 0px 30px white inset;
+        transition: none;
+    }
+}

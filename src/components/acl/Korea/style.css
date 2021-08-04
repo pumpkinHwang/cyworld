@@ -1,0 +1,50 @@
+
+.TH.site-wrap {
+    font-family: 'Prompt', sans-serif!important;
+}
+.font-size-genealogy-screen,.font-size-genealogy-screen-small{
+    font-family: 'Prompt', sans-serif!important;
+}
+
+.TH.site-wrap .form-control, .TH.site-wrap .btn, .TH.site-wrap button,
+.TH.site-wrap .s-alert-box, .TH.modal-dialog, .TH.modal-dialog button {
+    font-family: 'Prompt', sans-serif;
+}
+.TH.site-wrap .genealogy-page-wrapper .btn {
+    font-family: 'Prompt', sans-serif !important;
+}
+.TH.site-wrap .input-range__label {
+    font-family: 'Prompt', sans-serif !important;
+}
+
+.TH.site-wrap .input-range__label .input-range__label--value {
+    font-family: 'Prompt', sans-serif !important;
+}
+.app-list a {
+    min-width: 164px;
+}
+.TH.site-wrap .site-menu ul>li>a {
+    font-size: 16px;
+    letter-spacing: 0;
+}
+.TH.site-wrap .checkout-footer a.btn.btn-primary span {
+    font-size: 16px;
+}
+.th-language-name,  .th-language-name button, .th-language-name input{
+    font-family: 'Prompt', sans-serif!important;
+}
+
+body .TH, .TH button, .TH input, button, .modal-header, .modal-body, .modal-footer, h1, h2, h3, h4, h5, .form-control {
+    font-family: 'Prompt', sans-serif!important;
+}
+
+.TH.site-wrap .qs-add-to-cart, .qs-added-to-cart {
+    font-size: 12px!important;
+}
+
+
+@media screen and (max-width: 320px) {
+    .TH.site-wrap .title_rank{
+        margin-top:20px;
+    }
+}

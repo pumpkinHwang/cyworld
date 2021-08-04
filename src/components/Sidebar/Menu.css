@@ -1,0 +1,31 @@
+.ant-menu-submenu-title {
+    width: '100%' !important;
+}
+
+.ant-menu-item-selected {
+    background-color: rgb(31, 73, 125) !important;
+    color: '#fff' !important;
+}
+.ant-menu-item-active {
+    background-color: #001529 !important;
+}
+
+.ant-menu-item .ant-menu-item-only-child:hover {
+    color: rgb(31, 73, 125) !important;
+}
+
+.ant-menu-item {
+    margin: 0px !important;
+}
+.ant-menu-item.ant-menu-item-only-child {
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    height: 50px;
+    background-color: #374250;
+}
+
+.ant-menu-submenu.ant-menu-submenu-inline {
+    background-color: #374250;
+    margin: 0px;
+}
